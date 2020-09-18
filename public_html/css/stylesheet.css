@@ -1,0 +1,71 @@
+h1 {
+  color: #1A7A3C;
+  text-align: center;
+}
+
+h2 {
+  color: #58AD76;
+}
+
+body {
+  width: 75%;
+  margin: auto;
+}
+
+ul {
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #8558AD;
+  width: 100%;
+  list-style: none;
+}
+
+li {
+  float: left;
+  width: 15%;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: auto;
+  padding: 14px 16px;
+  text-decoration: none;
+  background: #8558AD;
+}
+
+li a:hover {
+    background-color: #DEC4E4;
+}
+
+.active {
+  background-color: #DEC4E4;
+}
+
+#calendar_image {
+  border: solid 3px #DEC4E4;
+  width: 450px;
+}
+
+.info-p {
+  border: solid 2px #58AD76;
+  width: auto;
+  padding: 10px;
+}
+
+th {
+  background-color: #DEC4E4;
+  width: auto;
+  padding: 5px;
+}
+
+td {
+  padding: 10px;
+}
+table {
+    width: 100%;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
