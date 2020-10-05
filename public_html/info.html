@@ -6,168 +6,231 @@
 		<title> 
 			Meet Our Cats - Cute Cats of the Month
 		</title>
-		<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+		<!-- This says our CSS is compatible with phones, and phones
+	         don't need to scale it strangely. -->
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!-- Main CSS styles for Bootstrap -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+
+	    <!-- Optional theme add-on -->
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/journal/bootstrap.min.css">
+
+	    <!-- If you don't like how lumen looks, go here and see other themes
+	         that are available:
+	         https://bootswatch.com/
+
+	         You can replace the 'optional theme' with links from the page below
+	         to get that theme:
+	         https://www.bootstrapcdn.com/bootswatch/
+	    -->
 	</head>
 
 	<body> 
 
 		<header>
 			<h1> Meet Our Cats! &#9829;</h1>
-			<!-- Added by Kaitlyn -->
-			 <nav>
-				<ul>
-					<li>
-						<a href="./index.html">Home</a>
-					</li>
-				    <li> 
-				    	<a href="./about.html">About</a>
-				    </li>
-				    <li> 
-				    	<a href="./shop.html">Shop</a>
-				    </li>
-				    <li> 
-				    	<a href="./info.html">Our Cats</a>
-				    </li>
-				    <li> 
-				    	<a href="./news.html">News</a>
-				    </li>
-				    <li> 
-				    	<a href="./videos.html">Videos</a>
-				    </li>
-				</ul>
-			</nav>
-			<!-- End -->
+			<!-- For more info about the navbar, see:
+		    https://getbootstrap.com/docs/4.0/components/navbar/
+		    -->
+		  	<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+		      	<a class="navbar-brand" href="index.html">Cute Cats of the Month</a>
+
+		      	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		        	<span class="navbar-toggler-icon"></span>
+		      	</button>
+
+		    	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		        	<ul class="navbar-nav mr-auto">
+			            <li class="nav-item">
+			            	<a class="nav-link" href="index.html">Home</a>
+			          	</li>
+
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="about.html">About</a>
+			          	</li>
+
+			          	<li class="nav-item">
+			            	<a class="nav-link" href="shop.html">Shop</a>
+			          	</li>
+
+			            <li class="nav-item">
+			             	<a class="nav-link" href="news.html">News</a>
+			            </li>
+
+			            <li class="nav-item">
+			            	<a class="nav-link" href="videos.html">Videos</a>
+			            </li>
+
+
+		          		<li class="nav-item dropdown active">
+		            		<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		              			Meet Our Cats <span class="sr-only">(current)</span>
+		            		</a>
+		            		<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+		                		<a class="dropdown-item" href="info.html">Gandalf the Gray</a>
+		                		<a class="dropdown-item" href="info.html">Luna</a>
+		              			<a class="dropdown-item" href="info.html">Ringo</a>
+		             			<a class="dropdown-item" href="info.html">Alvi</a>
+		            		</div>
+		          		</li>
+		       		</ul>
+		      	</div>
+    		</nav>
 		</header>
-			<h2> Gandalf the Gray </h2>
-			<img src="./images/gray-cat-on-couch.jpg" alt="Gray Cat" width="550">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm"  style="margin-top: 25px">
+					<div class="media">
+						<img class="mr-3" src="./images/gray-cat-on-couch.jpg" alt="Gray Cat" width="400">
+						<div class="media-body">
+							<h5 class="mt-0">Gandalf the Gray </h5>
+							<p> Named for his beautiful coat, Gandalf the Gray is the sweetest boy ever. In the morning if he knows you're awake, he pokes your face with his fluffy paws until you get up. Gandalf never hisses or scratches; he is a pacifist through and through. His gorgeous gray coat is so fluffy and soft to the touch. He will follow you around everywhere and demand you give him a belly rub! Could he really be a dog in disguise?
+							</p>
+						</div>
+					</div>
+					 <table>
+						  <tr>
+						    <th colspan="2"> Cat Features </th>
+						  </tr>
+						  <tr>
+						  	<td>Breed</td>
+						  	<td>Domestic Shorthair</td>
+						  </tr>
+						  <tr>
+						  	<td>Age</td>
+						  	<td>3 years</td>
+						  <tr>	
+						  	<td>Sex</td>
+						  	<td>Male</td>
+						  <tr>
+						    <td>Eyes</td>
+						    <td>Green</td>
+						  </tr>
+						  <tr>
+						    <td>Coat</td>
+						    <td>Gray</td>
+						  </tr>
+					</table>
+				</div>
+				<div class="col-sm"  style="margin-top: 25px">
+					<div class="media">
+						<img class="mr-3" src="./images/brown-cat-curled.jpg" alt="Brown tabby cat" width="350" height="500">
+						<div class="media-body">
+							<h5 class="mt-0">Luna</h5>
+							<p> Luna is a very special cat. She is adventurous, independent, and intelligent. She adores the outside, and loves nose kisses! While Luna is a sweet girl, she can also be defiant, especially when she is told "no."
+							</p>
+						</div>
+					</div>
 
-		 <p class="info-p"> 
-		 	Named for his beautiful coat, Gandalf the Gray is the sweetest boy ever. In the morning if he knows you're awake, he pokes your face with his fluffy paws until you get up. Gandalf never hisses or scratches; he is a pacifist through and through. His gorgeous gray coat is so fluffy and soft to the touch. He will follow you around everywhere and demand you give him a belly rub! Could he really be a dog in disguise?
-		 </p>
-		 
-		 <table>
-			  <tr>
-			    <th colspan="2"> Cat Features </th>
-			  </tr>
-			  <tr>
-			  	<td>Breed</td>
-			  	<td>Domestic Shorthair</td>
-			  </tr>
-			  <tr>
-			  	<td>Age</td>
-			  	<td>3 years</td>
-			  <tr>	
-			  	<td>Sex</td>
-			  	<td>Male</td>
-			  <tr>
-			    <td>Eyes</td>
-			    <td>Green</td>
-			  </tr>
-			  <tr>
-			    <td>Coat</td>
-			    <td>Gray</td>
-			  </tr>
-		</table>
+					<table>
+						  <tr>
+						    <th colspan="2"> Cat Features </th>
+						  </tr>
+						  <tr>
+						  	<td>Breed</td>
+						  	<td>Domestic Shorthair</td>
+						  </tr>
+						  <tr>
+						  	<td>Age</td>
+						  	<td>4 months</td>
+						  <tr>	
+						  	<td>Sex</td>
+						  	<td>Female</td>
+						  <tr>
+						    <td>Eyes</td>
+						    <td>Gold</td>
+						  </tr>
+						  <tr>
+						    <td>Coat</td>
+						    <td>Brown Tabby</td>
+						  </tr>
+					</table>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm"  style="margin-top: 25px">
+					<!-- Added by Kaitlyn -->
+					<div class="media">
+						<img class="mr-3" src="./images/ringo.jpg" alt="Ringo" width="300">
+						<div class="media-body">
+							<h5 class="mt-0">Ringo</h5>
+							<p> Ringo loves to sleep. He loves to eat, not only his food, but his brother, Simba's, food as well. When Ringo isn't playing with his owner, Kimmie, he is running around the house and chasing Simba.
+							</p>
+						</div>
+					</div>
 
-		<h2> Luna </h2>
-
-		<img src="./images/brown-cat-curled.jpg" alt="Brown tabby cat" width="350">
-
-		<p class="info-p"> Luna is a very special cat. She is adventurous, independent, and intelligent. She adores the outside, and loves nose kisses! While Luna is a sweet girl, she can also be defiant, especially when she is told "no."
-		</p>
-
-		<table>
-			  <tr>
-			    <th colspan="2"> Cat Features </th>
-			  </tr>
-			  <tr>
-			  	<td>Breed</td>
-			  	<td>Domestic Shorthair</td>
-			  </tr>
-			  <tr>
-			  	<td>Age</td>
-			  	<td>4 months</td>
-			  <tr>	
-			  	<td>Sex</td>
-			  	<td>Female</td>
-			  <tr>
-			    <td>Eyes</td>
-			    <td>Gold</td>
-			  </tr>
-			  <tr>
-			    <td>Coat</td>
-			    <td>Brown Tabby</td>
-			  </tr>
-		</table>
-
-	<!-- Added by Kaitlyn -->
-		<h2> Ringo </h2>
-
-		<img src="./images/ringo.jpg" alt="Ringo" width="350">
-
-		<p class="info-p"> Ringo loves to sleep. He loves to eat, not only his food, but his brother, Simba's, food as well. When Ringo isn't playing with his owner, Kimmie, he is running around the house and chasing Simba.
-		</p>
-
-		<table>
-			  <tr>
-			    <th colspan="2"> Cat Features </th>
-			  </tr>
-			  <tr>
-			  	<td>Breed</td>
-			  	<td>Domestic Shorthair</td>
-			  </tr>
-			  <tr>
-			  	<td>Age</td>
-			  	<td>3 years</td>
-			  <tr>	
-			  	<td>Sex</td>
-			  	<td>Male</td>
-			  <tr>
-			    <td>Eyes</td>
-			    <td>Black</td>
-			  </tr>
-			  <tr>
-			    <td>Coat</td>
-			    <td>Black</td>
-			  </tr>
-		</table>
-		<!-- End -->
-
-		<!-- Added by Kaitlyn -->
-		<h2> Alvi </h2>
-
-		<img src="./images/alvi2.jpg" alt="Alvi 2" width="350">
-
-		<p class="info-p"> Alvi loves attention, but only on her own terms. She loves to play with the laser pointer, but can loose interest fast. Alvi absolutely loves tuna.
-		</p>
-
-		<table>
-			  <tr>
-			    <th colspan="2"> Cat Features </th>
-			  </tr>
-			  <tr>
-			  	<td>Breed</td>
-			  	<td>Domestic Shorthair</td>
-			  </tr>
-			  <tr>
-			  	<td>Age</td>
-			  	<td>4 years</td>
-			  <tr>	
-			  	<td>Sex</td>
-			  	<td>Female</td>
-			  <tr>
-			    <td>Eyes</td>
-			    <td>Gold</td>
-			  </tr>
-			  <tr>
-			    <td>Coat</td>
-			    <td>Black/Yellow/White</td>
-			  </tr>
-		</table>
-		<!-- End -->
-		 <footer> 
-		 	<h5> For more info contact (xxx) xxx-xxxx </h5>
-		 	<h5> &#169;Copyright Jessica Cousins &#38; Sid Hudson</h5>
+					<table>
+						  <tr>
+						    <th colspan="2"> Cat Features </th>
+						  </tr>
+						  <tr>
+						  	<td>Breed</td>
+						  	<td>Domestic Shorthair</td>
+						  </tr>
+						  <tr>
+						  	<td>Age</td>
+						  	<td>3 years</td>
+						  <tr>	
+						  	<td>Sex</td>
+						  	<td>Male</td>
+						  <tr>
+						    <td>Eyes</td>
+						    <td>Black</td>
+						  </tr>
+						  <tr>
+						    <td>Coat</td>
+						    <td>Black</td>
+						  </tr>
+					</table>
+					<!-- End -->
+				</div>
+				<div class="col-sm"  style="margin-top: 25px">
+					<!-- Added by Kaitlyn -->
+					<div class="media">
+						<img class="mr-3" src="./images/alvi2.jpg" alt="Alvi 2" width="350">
+						<div class="media-body">
+							<h5 class="mt-0">Alvi</h5>
+							<p>Alvi loves attention, but only on her own terms. She loves to play with the laser pointer, but can loose interest fast. Alvi absolutely loves tuna.
+							</p>
+						</div>
+					</div>
+		
+					<table>
+						  <tr>
+						    <th colspan="2"> Cat Features </th>
+						  </tr>
+						  <tr>
+						  	<td>Breed</td>
+						  	<td>Domestic Shorthair</td>
+						  </tr>
+						  <tr>
+						  	<td>Age</td>
+						  	<td>4 years</td>
+						  <tr>	
+						  	<td>Sex</td>
+						  	<td>Female</td>
+						  <tr>
+						    <td>Eyes</td>
+						    <td>Gold</td>
+						  </tr>
+						  <tr>
+						    <td>Coat</td>
+						    <td>Black/Yellow/White</td>
+						  </tr>
+					</table>
+				</div>
+			</div>
+			 <footer> 
+		 		<h5> For more info contact (xxx) xxx-xxxx </h5>
+		 		<h5> &#169;Copyright Jessica Cousins &#38; Sid Hudson</h5>
 		 </footer>
+		</div>
+	<!-- End -->
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 	</body>
- </html>
+</html>
